@@ -10,7 +10,7 @@ fi
 
 docker login registry.gitlab.com -u $GITLAB_USERNAME  -p $GITLAB_PAT
 
-export NEW_IMAGE="registry.gitlab.com/${GITLAB_USERNAME}b/gitops-application-builder:${VERSION}" 
+export NEW_IMAGE="registry.gitlab.com/${GITLAB_USERNAME}/gitops-application-builder:${VERSION}" 
 
 docker build -t ${NEW_IMAGE} .
 docker push ${NEW_IMAGE}
