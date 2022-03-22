@@ -52,7 +52,7 @@ git config --local user.name "Panupong CI"
 git add .
 git commit -m "[ADD] - docker-compose.applications.yaml $VERSION"
 git checkout -b release-${VERSION}
-git push origin release-${VERSION}
+git push origin -f release-${VERSION}
 
 cd ..
 rm -rf ${GITHUB_REPO}
