@@ -1,0 +1,17 @@
+{
+  "name": "gitops-with-compose-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PanupongDeve/gitops-with-compose-builder.git",
+  "author": "Panupong Chamsomboon <panupong.dev.web@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  }
+}
